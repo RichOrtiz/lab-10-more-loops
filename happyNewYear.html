@@ -10,13 +10,14 @@
             console.log(start);
             let nextNumber = start - 1;
             if (nextNumber > 0) {
-                countDown(nextNumber);
+                setTimeout(countDown, 1000, nextNumber);
             }
             else {
-                console.log("happy new year");
+                setTimeout(function(){console.log("HAPPY NEW YEAR!");}, 1000, nextNumber);
             }
         }
-        countDown(10);
+        var count = parseInt(prompt("How many seconds until New Years? "));
+        countDown(count);
 
     </script>
 </body>
