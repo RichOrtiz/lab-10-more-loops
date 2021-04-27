@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var maximum_stories = 10;
+        var userNum = parseInt(prompt("Which floor is your office on?"));
+        while (userNum > maximum_stories) {
+            console.log("You entered " + userNum + ". There are 10 stories in the building. Please enter a valid number.")
+            userNum = parseInt(prompt("You entered " + userNum + ". There are " + maximum_stories +" stories in the building. Please enter a valid number."));
+        }
+        console.log("great job, your office is on floor: " + userNum);
+    </script>
+</body>
+</html>
